@@ -1,0 +1,7 @@
+# Use Eclipse Temurin JDK 17 (Alpine)
+FROM eclipse-temurin:17-jdk-alpine
+
+WORKDIR /app
+COPY HelloDevOps.java /app
+RUN javac HelloDevOps.java
+CMD ["java", "HelloDevOps"]
